@@ -15,7 +15,7 @@ div {
     width: 100%;
 }
 
-/*ask for help with positioning and wordbreak*/
+/*ask for help with wordbreak*/
 header {
     width: 100%;
     background-color: #121212;
@@ -30,7 +30,6 @@ header {
 header section {
     width: 80%;
     display: inline;
-
 }
 
 header section h1 {
@@ -45,7 +44,6 @@ nav {
     width: 20%;
     padding-top: 10px;
 }
-
 
 li {
     display: inline;
@@ -67,6 +65,7 @@ a:hover {
     margin: 0 auto 0 auto;
     width: 100%;
 }
+
 main {
     /*border: solid 10px;
     border-width: auto;
