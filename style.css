@@ -4,53 +4,80 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0 auto 0 auto;
     background-color: #181818;
 }
 
-div {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
+header {
+    
+
 }
 
-/*ask for help with wordbreak*/
-header {
+/*flexbox*/
+
+/* defining flexbox containing nav bar items*/
+nav {
     width: 100%;
     background-color: #121212;
-    display:flex; 
-    flex-direction: row; 
-    justify-content: center; 
+    position: fixed; 
+    width: 100%;
+    height:7vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto 0 auto;
-    word-break:keep-all;
+    font-size: 26px;
 }
 
-header section {
-    width: 80%;
-    display: inline;
+/*h1 container*/
+.headerflex {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin: 1% 0% 1% 10%;
+    flex-wrap: nowrap;
+    height:100%;
+
 }
 
-header section h1 {
-    width: 50%;
-    display: inline;
-    float: left;
-}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin: 1% 10% 1% 0%;
+    flex-wrap: nowrap;
+    height:100%;
 
-nav {
+}
+/* End of Flexbox*/
+
+/*Elements inside flexbox*/
+
+h1 {
     display: inline;
-    float: right;
-    width: 20%;
-    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+	font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+	vertical-align: baseline;
+    height: 100%;
+    font-size: 100%;
+    
 }
 
 li {
     display: inline;
-    /*border-left: 1px solid white;
-    border-right: 1px solid white;*/
-    margin: 1%;
-    padding: 2%;
+    margin: 1% 3% 1% 3%;
+    List-style: none;
+    height: 100%;
+    font-size: 100%;
+}
+
+.contact {
+    margin:1% 0% 1% 3%;
 }
 
 a:link, a:visited, a:active { 
@@ -61,18 +88,20 @@ a:hover {
     text-decoration: underline;
 }
 
+/* End of Navbar/Flexbox*/
+
+/*start of page content*/
+
 .hero {
-    margin: 0 auto 0 auto;
+    margin: 1% auto 0 auto;
     width: 100%;
 }
 
 main {
-    /*border: solid 10px;
-    border-width: auto;
-    border-radius: 40%;*/
     width: 80%;
     margin: 0 auto 0 auto;
-    text-align:justify;
+    text-align:left;
+    font-size: 22px;
 }
 
 main section{
@@ -81,4 +110,78 @@ main section{
 
 p {
     word-wrap: break-word;
+    text-align: justify;
 }
+
+@media screen and (max-width: 900px) {
+
+* {
+    font-size: 105%;
+    max-width: 100vh;
+}
+
+body{
+
+}
+
+main {
+    font-size: 105%;
+    width: 90%;
+    margin-left: 10%;
+    padding: 8%;
+}
+
+.hero {
+    margin: 0% auto 0 auto;
+}
+
+p {
+    text-align: left;
+}
+
+header {
+}
+
+h1{
+}
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #121212;
+    margin-right: 85%;
+    width: 10%;
+    position: fixed;
+    font-size: 95%;
+    height: 100%;
+    padding: 2%;
+}
+
+.headerflex {
+    display: inline;
+    height:100%;
+    padding: 2%;
+    margin: 1%;
+}
+
+ul {
+    display: block;
+    height:100%;
+    padding: 2%;
+    margin: 1%;
+    
+}
+
+li {
+    margin: 0;
+}
+
+section{
+    max-width: 100vh;
+}
+
+.contact {
+    margin: inherit;
+}}
