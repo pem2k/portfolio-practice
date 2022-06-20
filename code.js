@@ -1,3 +1,5 @@
+//testing js hidemenu
+
 //when button is clicked
 function buttonclick()    
 {    
