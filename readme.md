@@ -11,6 +11,10 @@ In future sites I plan to implement css variables for easier color management. I
 
 After this project I'm feeling much more comfortable with flexbox, and will be able to create higher quality and better scaling layouts as I continue to practice.
 
+## Deployed Application
+
+    https://pem2k.github.io/portfolio-practice
+
 ## Screenshot
 
     ![screenshot of navbar, hero image, and about me section] (https://raw.github.com/pem2k/portfolio-practice/main/assets/screen1.png)
