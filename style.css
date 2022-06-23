@@ -10,16 +10,16 @@ body {
     background-color: #181818;
 }
 
+/* Navbar*/
 header{
-    height: 10%;
+    height: 8%;
 }
 
 nav {
     width: 100%;
     background-color: #121212;
     position: fixed; 
-    padding-inline-start: 0
-    
+    padding-inline-start: 0;
 }
 
 /*flexbox*/
@@ -27,7 +27,6 @@ nav {
 ul {
     display: flex;
     flex-flow: row nowrap;
-    flex-basis: content;
     justify-content: space-evenly;
     padding-inline-start: 0;
     font-size: 22px;
@@ -38,17 +37,14 @@ li {
     List-style: none;
 }
 
-    a:link, a:visited, a:active { 
+a:link, a:visited, a:active, a:hover { 
     text-decoration: none; 
-    }
-
-    a:hover {
-    text-decoration: underline;
-    }
+}
 
 /* end of flexbox*/
 
 /*start of page content*/
+
 main {
     width: 80%;
     margin: 0 auto 0 auto;
@@ -56,8 +52,20 @@ main {
     font-size: 22px;
 }
 
-h2{
-    text-wrap: wrap;
+#padRemove {
+    padding: 0;
+}
+
+h2 {
+    color: white;
+    background-color: #181818;
+    padding: 5%;
+    opacity: .8;
+}
+
+p {
+    word-wrap: break-word;
+    text-align: left;
 }
 
 .hero {
@@ -65,36 +73,78 @@ h2{
     width: 100%;
 }
 
-.container{
-    margin: 0 2% 0 2%;
+/*Background images for project cards*/
+
+#bg1 {
+    background-image: url("./assets/succulent-1.jpg");
+    background-position: center;
 }
 
+#bg2 {
+    background-image: url("./assets/succulent-2.jpg");
+}
+
+#bg3 {
+    background-image: url("./assets/succulent-3.jpg");
+    background-position: center;
+}
+
+#bg4 {
+    background-image: url("./assets/succulent-4.jpg");
+}
+
+#bg5 {
+    background-image: url("./assets/succulent-5.jpg");
+    background-position: center;
+}
+
+#bg6 {
+    background-image: url("./assets/succulent-6.jpg");
+}
+
+#bg7 {
+    background-image: url("./assets/succulent-7.jpg");
+    background-position: center;
+}
+
+#bg8 {
+    background-image: url("./assets/succulent-8.jpg");
+}
+
+.grayscale{
+    filter: grayscale(100);
+    transition: all .5s ease-in-out;
+}
+
+.grayscale:hover{
+    filter: none;
+    transform: scale(1.1)
+}
 
 /*styling for contact and project cards*/
-.contact1 {
+
+.card {
     border: 0px solid #181818;
     text-align: center;
     box-shadow: 0 -5px grey, 0 5px grey;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     padding: 5%;
     margin: 0 auto 0 auto;
 }
 
-.line1flex {
+.card:hover{
+    filter: none;
+}
+
+.cardFlex {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-content: space-between;
+    align-items: space-between;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-
-
-p {
-    word-wrap: break-word;
-    text-align: left;
 }
 
 
@@ -104,13 +154,8 @@ p {
     }
 }
 
-@media screen and (max-width: 992px) {
-    *{
-        font-size: 18px;
-    }
-}
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 700px) {
 
 * {
     font-size:16px;
@@ -122,8 +167,8 @@ body {
 
 main {
     width: 75%;
-    margin: 0% auto 0 12vh;
-    padding: 0 auto 0 auto;
+    margin: 0% auto 0 10vh;
+    padding: 0 auto 0 1vh;
     font-size: 16px;
 }
 
@@ -143,10 +188,11 @@ header {
 }
 
 nav {
-    width:9vh;
+    width: 8vh;
     height: 100%;
     position: fixed; 
     padding: 0 1% 0 1%;
+    overflow: hidden;
 }
 
 
@@ -156,6 +202,7 @@ ul {
     justify-content: space-evenly;
     align-content: flex-start;
     height:100%;
+    text-align: center;
 }
 
 li {
@@ -173,23 +220,21 @@ section {
     margin-top: 5%;
 }
 
-.line1flex {
+.cardFlex {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    row-gap: 16px;
+    justify-content: center;
     margin: 0 auto 0 auto;
+    
 }
 
 
-
-.contact1 {
-    border: 0px solid #181818;
-    text-align: center;
-    box-shadow: 0 -5px grey;
+.card {
+    box-shadow: 0 0;
     max-width: 80%;
+    margin: 2% auto 2% auto;
+}
 }
 
 
-@media screen and (max-width: 576px) {
-
-}
