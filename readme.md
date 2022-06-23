@@ -13,10 +13,14 @@ After this project I'm feeling much more comfortable with flexbox, and will be a
 
 ## Screenshot
 
-    ![Screenshot of navbar, hero image, and about me section](assets/screen1.png)
-    ![screenshot of navbar and app showcase](assets/screen2.png)
-    ![screenshot of about me and nav bar following media query](assets/screen1-vert.png)
-    ![screenshot of app showcase following media query ](assets/screen2-vert.png)
+    ![screenshot of navbar, hero image, and about me section] (https://raw.github.com/pem2k/portfolio-practice/main/assets/screen1.png)
+    
+    ![screenshot of navbar and app showcase] (https://raw.github.com/pem2k/portfolio-practice/main/assets/screen2.png)
+    
+    ![screenshot of about me and nav bar following media query] (https://raw.github.com/pem2k/portfolio-practice/main/assets/screen1-vert.png)
+
+    ![screenshot of app showcase following media query] (https://raw.github.com/pem2k/portfolio-practice/main/assets/screen2-vert.png)
+    ```
 
 ## Credits
 
